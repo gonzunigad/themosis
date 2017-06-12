@@ -2,8 +2,10 @@
 .DS_Store
 Thumbs.db
 
+### NPM
+node_modules
+
 ### Composer
-composer.lock
 vendor/
 
 ### IDE
@@ -15,8 +17,6 @@ cs_fixer*
 ### Wordpress
 /htdocs/cms/*
 !/htdocs/cms/.gitkeep
-/htdocs/content/mu-plugins/themosis-framework/
-/htdocs/content/themes/themosis-theme/
 /htdocs/content/uploads/
 /htdocs/content/upgrade/
 

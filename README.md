@@ -1,29 +1,48 @@
-Themosis framework
-==================
+# Meat Project
+by [Digital Meat](http://meat.cl/)
 
-[![Build Status](https://travis-ci.org/themosis/themosis.svg?branch=dev)](https://travis-ci.org/themosis/themosis)
+- [Como hacer empanadas](#Installation)
+- [Environments](#environments)
 
-The Themosis framework is a tool aimed to WordPress developers of any levels. But the better WordPress and PHP knowledge you have the easier it is to work with.
+<a name="installation"></a>
+## Installation 
+You can install the project using `meat-cli`
+```bash
+composer global require meat/meat-cli
+``` 
+```bash
+cd ~/code/
+meat install project
+```
 
-Themosis framework is a tool to help you develop websites and web applications faster using [WordPress](https://wordpress.org). Using an elegant and simple code syntax, Themosis framework helps you structure and organize your code and allows you to better manage and scale your WordPress websites and applications.
+### Manual installation
+#### Development / Local Environment
+```bash
+git clone git@bitbucket.org:digitalmeatdev/project.git
+cd project
+npm install
+composer install --prefer-dist
+cp .env.example .env
+vim .env  
+npm run watch
+php artisan serve
+```
 
-Development team
-----------------
-The framework was created by [Julien Lambé](http://www.themosis.com/), who continues to lead the development.
+#### Production Environments
+```bash
+git clone git@bitbucket.org:digitalmeatdev/project.git
+cd project
+npm install
+composer install --prefer-dist --no-dev
+npm run production
+cp .env.example .env
+vim .env  
+```
 
-Contributing
-------------
-Any help is appreciated. The project is open-source and we encourage you to participate. You can contribute to the project in multiple ways by:
-
-- Reporting a bug issue
-- Suggesting features
-- Sending a pull request with code fix or feature
-- Following the project on [GitHub](https://github.com/themosis)
-- Following us on Twitter: [@Themosis](https://twitter.com/Themosis)
-- Sharing the project around your community
-
-For details about contributing to the framework, please check the [contribution guide](http://framework.themosis.com/docs/1.3/contributing).
-
-License
--------
-The Themosis framework is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).
+<a name="environments"></a>
+## Environments
+#### Staging: 
+    URL: https://project.dmeat.cl
+    
+#### Producción:
+    URL: https://project.cl

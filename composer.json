@@ -44,7 +44,10 @@
     "wpackagist-plugin/wordpress-seo": "4.*",
     "wpackagist-plugin/disable-comments": "1.*",
     "wpackagist-plugin/minify-html-markup": "1.*",
-    "wpackagist-plugin/wp-sanitize-file-name-plus": "1.0.3"
+    "wpackagist-plugin/wp-sanitize-file-name-plus": "1.0.3",
+    "wpackagist-plugin/wp-super-cache": "^1.4",
+    "meat/themosis-setup-theme": "^0.1.0",
+    "mandrill/mandrill": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "5.3.*"

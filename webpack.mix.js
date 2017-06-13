@@ -15,7 +15,7 @@ mix
   .setPublicPath('htdocs/content/themes/meat-theme/dist')
   .setResourceRoot('../')
   .js('./resources/js/app.js', '/js')
-  .sass('./resources/sass/app.scss', '/css')
+  .sass('./resources/scss/app.scss', '/css')
   .sourceMaps()
   .browserSync('project.dev')
 

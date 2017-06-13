@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/helpers.php';
+
 /*----------------------------------------------------*/
 // Paths
 /*----------------------------------------------------*/
@@ -71,3 +73,4 @@ define('THEMOSIS_STORAGE', $rootPath.DS.'storage');
 define('CONTENT_DIR', 'content');
 define('WP_CONTENT_DIR', $webrootPath.DS.CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME.'/'.CONTENT_DIR);
+

@@ -31,20 +31,20 @@ $GLOBALS['themosis.capsule'] = $capsule;
 /*
  * @link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service 
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         env('AUTH_KEY', 'put your unique phrase here'));
+define('SECURE_AUTH_KEY',  env('SECURE_AUTH_KEY', 'put your unique phrase here'));
+define('LOGGED_IN_KEY',    env('LOGGED_IN_KEY', 'put your unique phrase here'));
+define('NONCE_KEY',        env('NONCE_KEY', 'put your unique phrase here'));
+define('AUTH_SALT',        env('AUTH_SALT', 'put your unique phrase here'));
+define('SECURE_AUTH_SALT', env('SECURE_AUTH_SALT', 'put your unique phrase here'));
+define('LOGGED_IN_SALT',   env('LOGGED_IN_SALT', 'put your unique phrase here'));
+define('NONCE_SALT',       env('NONCE_SALT', 'put your unique phrase here'));
 
 /*----------------------------------------------------*/
 // Custom settings
 /*----------------------------------------------------*/
 define('WP_AUTO_UPDATE_CORE', false);
 define('DISALLOW_FILE_EDIT', true);
-define('WP_DEFAULT_THEME', 'themosis-theme');
+define('WP_DEFAULT_THEME', 'themosis-setup-theme');
 
 /* That's all, stop editing! Happy blogging. */

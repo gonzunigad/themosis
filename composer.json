@@ -42,7 +42,6 @@
     "wpackagist-plugin/wordfence": "6.*",
     "wpackagist-plugin/admin-menu-editor": "1.7.3",
     "wpackagist-plugin/wordpress-seo": "4.*",
-    "wpackagist-plugin/disable-comments": "1.*",
     "wpackagist-plugin/minify-html-markup": "1.*",
     "wpackagist-plugin/wp-sanitize-file-name-plus": "1.0.3",
     "wpackagist-plugin/wp-super-cache": "^1.4",

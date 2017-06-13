@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "759992d8fd92193153032a613e6ccb9a",
+    "content-hash": "bc3178221ed520544407e1fc0c5769f6",
     "packages": [
         {
             "name": "composer/installers",
@@ -1846,7 +1846,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1494218031",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {

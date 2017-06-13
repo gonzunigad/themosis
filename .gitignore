@@ -20,8 +20,10 @@ cs_fixer*
 /htdocs/content/uploads/
 /htdocs/content/upgrade/
 
-
 ### Environment Credentials
 .env
 .env.*
 !.env.local
+
+### Plugins
+/htdocs/content/wflogs/

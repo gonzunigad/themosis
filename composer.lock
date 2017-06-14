@@ -959,16 +959,16 @@
         },
         {
             "name": "meat/themosis-setup-theme",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digitalmeat/themosis-setup-theme.git",
-                "reference": "582501d2151cdb334175b9a5e5d617d95c062e38"
+                "reference": "b669c0cf345a94691cf1bbde37addc0990ddbbd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digitalmeat/themosis-setup-theme/zipball/582501d2151cdb334175b9a5e5d617d95c062e38",
-                "reference": "582501d2151cdb334175b9a5e5d617d95c062e38",
+                "url": "https://api.github.com/repos/digitalmeat/themosis-setup-theme/zipball/b669c0cf345a94691cf1bbde37addc0990ddbbd6",
+                "reference": "b669c0cf345a94691cf1bbde37addc0990ddbbd6",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -982,7 +982,7 @@
                     "email": "gonzunigad@gmail.com"
                 }
             ],
-            "time": "2017-06-13T22:17:56+00:00"
+            "time": "2017-06-14T14:11:29+00:00"
         },
         {
             "name": "nesbot/carbon",

@@ -18,7 +18,6 @@ mix
   .setResourceRoot('../')
   .js('./resources/js/app.js', '/js')
   .sass('./resources/scss/app.scss', '/css')
-  .sourceMaps()
   .browserSync(project_folder + '.dev') //replace with my-project.dev
 
 // Full API

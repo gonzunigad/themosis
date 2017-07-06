@@ -31,3 +31,6 @@ cs_fixer*
 /htdocs/content/plugins/*
 !/htdocs/content/plugins/advanced-custom-fields-pro
 /htdocs/content/wflogs/
+htdocs/content/cache/
+htdocs/content/wp-cache-config.php
+htdocs/content/advanced-cache.php

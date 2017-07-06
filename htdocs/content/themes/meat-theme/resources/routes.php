@@ -9,6 +9,8 @@
  *
  */
 
+// flush_rewrite_rules();
+
 Route::get('home', function()
 {
     return view('welcome');

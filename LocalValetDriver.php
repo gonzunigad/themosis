@@ -12,7 +12,8 @@ class LocalValetDriver extends WordpressValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        return file_exists($sitePath.'/library/Thms/Config/Environment.php');
+        $sitePath = $sitePath . '/htdocs';
+        return file_exists($sitePath.'/wp-config.php') || file_exists($sitePath.'/wp-config-sample.php');
     }
 
     /**
@@ -25,12 +26,13 @@ class LocalValetDriver extends WordpressValetDriver
      */
     public function frontControllerPath($sitePath, $siteName, $uri)
     {
-        
+        $sitePath = $sitePath . '/htdocs';
         $_SERVER['PHP_SELF']    = $uri;
         $_SERVER['SERVER_ADDR'] = '127.0.0.1';
         $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
+
         return parent::frontControllerPath(
-            $sitePath, $siteName, '/htdocs/' . $this->forceTrailingSlash($uri)
+            $sitePath, $siteName, $this->forceTrailingSlash($uri)
         );
     }
 
@@ -45,25 +47,8 @@ class LocalValetDriver extends WordpressValetDriver
         if (substr($uri, -1 * strlen('/wp-admin')) == '/wp-admin') {
             header('Location: '.$uri.'/'); die;
         }
-        return $uri;
-    }
 
-    /**
-     * Determine if the incoming request is for a static file.
-     *
-     * @param  string  $sitePath
-     * @param  string  $siteName
-     * @param  string  $uri
-     * @return string|false
-     */
-    public function isStaticFile($sitePath, $siteName, $uri)
-    {
-        if (file_exists($staticFilePath = $sitePath.'/htdocs'.$uri)) {
-            return $staticFilePath;
-        } elseif ($this->isActualFile($staticFilePath = $sitePath.$uri)) {
-            return $staticFilePath;
-        }
-        return false;
+        return $uri;
     }
 
 }

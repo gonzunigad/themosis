@@ -20,6 +20,10 @@ cs_fixer*
 /htdocs/content/uploads/
 /htdocs/content/upgrade/
 
+### Themes
+/htdocs/content/themes/*
+!/htdocs/content/themes/meat-theme
+
 ### Environment Credentials
 .env
 

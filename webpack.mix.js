@@ -11,13 +11,15 @@ let mix = require('laravel-mix');
  |
  */
 
+let project_folder = path.basename(process.cwd());
+
 mix
   .setPublicPath('htdocs/content/themes/meat-theme/dist')
   .setResourceRoot('../')
   .js('./resources/js/app.js', '/js')
   .sass('./resources/scss/app.scss', '/css')
   .sourceMaps()
-  .browserSync('project.dev')
+  .browserSync(project_folder + '.dev') //replace with my-project.dev
 
 // Full API
 // mix.js(src, output);

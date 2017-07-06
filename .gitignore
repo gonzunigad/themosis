@@ -22,8 +22,8 @@ cs_fixer*
 
 ### Environment Credentials
 .env
-.env.*
-!.env.local
 
 ### Plugins
+/htdocs/content/plugins/*
+!/htdocs/content/plugins/advanced-custom-fields-pro
 /htdocs/content/wflogs/

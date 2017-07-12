@@ -1,10 +1,8 @@
 window._ = require('lodash');
 
 try {
-  
   window.$ = window.jQuery = require('jquery');
   require('bootstrap-sass');
-
 } catch (e) {}
 
 /**
@@ -32,3 +30,9 @@ if (token) {
 }
 
 window.Vue = require('vue');
+
+/*
+  Custom plugins
+*/
+
+window.slick = require('slick-carousel');

@@ -1,8 +1,14 @@
 
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme";
+
 // Slick carousel
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 
 // Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
 
-// 
+// Sweetalert
+@import "node_modules/sweetalert/dist/sweetalert";

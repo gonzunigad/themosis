@@ -23,6 +23,7 @@ cs_fixer*
 ### Themes
 /htdocs/content/themes/*
 !/htdocs/content/themes/meat-theme
+/htdocs/content/themes/meat-theme/dist
 
 ### Environment Credentials
 .env

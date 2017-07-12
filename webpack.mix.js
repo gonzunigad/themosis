@@ -11,14 +11,23 @@ let mix = require('laravel-mix');
  |
  */
 
-let project_folder = path.basename(process.cwd());
+let project_folder = path.basename( process.cwd() );
+let theme_assets_path = 'htdocs/content/themes/meat-theme/dist'
 
 mix
-  .setPublicPath('htdocs/content/themes/meat-theme/dist')
-  .setResourceRoot('../')
-  .js('./resources/js/app.js', '/js')
+  .setPublicPath( theme_assets_path )
+  .js( './resources/js/app.js', '/js')
   .sass('./resources/scss/app.scss', '/css')
-  .browserSync(project_folder + '.dev') //replace with my-project.dev
+  .copy( './resources/images'  , theme_assets_path + '/images'  )
+  .browserSync({
+    proxy: project_folder + '.dev',
+    files: [
+      theme_assets_path + '/resources/views/**/*.php',
+      theme_assets_path + '/js/**/*.js',
+      theme_assets_path + '/css/**/*.css',
+      theme_assets_path + '/images/**/*.*'
+    ]
+  });
 
 // Full API
 // mix.js(src, output);

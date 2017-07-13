@@ -41,7 +41,6 @@
     "filp/whoops": "^2.1",
     "illuminate/database": "^5.3",
     "meat/envoy-helper": "^0.1.2",
-    "wpackagist-plugin/wordfence": "6.*",
     "wpackagist-plugin/admin-menu-editor": "1.7.3",
     "wpackagist-plugin/wordpress-seo": "4.*",
     "wpackagist-plugin/minify-html-markup": "1.*",

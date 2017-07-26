@@ -16,6 +16,7 @@ let theme_assets_path = 'htdocs/content/themes/meat-theme/dist'
 
 mix
   .setPublicPath( theme_assets_path )
+  .setResourceRoot('../')
   .js( './resources/js/app.js', '/js')
   .sass('./resources/scss/app.scss', '/css')
   .copy( './resources/images'  , theme_assets_path + '/images'  )
